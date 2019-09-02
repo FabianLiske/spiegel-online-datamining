@@ -211,7 +211,7 @@ def get_meta(name):
 	return type_, headline, created, published, modified, section, creator, good_url
 
 while True:
-	if "ArticleList" in os.listdir():
+	if "ArticleList.csv" in os.listdir():
 		table = pd.read_csv("ArticleList.csv", sep = ",")
 	else:
 		table = pd.DataFrame(columns = [
