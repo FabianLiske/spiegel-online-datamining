@@ -194,7 +194,8 @@ def get_meta(name):
 				for line in file:
 					if string in line:
 						url = line.replace("    ", "").replace('"', "").replace(string, "").replace(",", "")
-						url = url.replace(" ", "").replace(":", "", 1).replace("\t", "").replace("\n", "").replace("url", "")
+						url = url.replace(" ", "").replace(":", "", 1).replace("\t", "").replace("\n", "")
+						url = url.replace("url", "")
 						return url
 		except:
 			print("Now that didn't work...")
